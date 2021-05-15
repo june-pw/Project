@@ -1,0 +1,135 @@
+$font: 'Montserrat', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font;
+}
+.container{
+    align-items: center;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    background-color: #e8ecf1;
+    height: 400px;
+    width: 500px;
+    border-radius: 10px;
+    
+    h2{
+        margin: 20px;
+        text-align: center;
+        padding: 0 0 20px 0;
+        border-bottom:1px solid silver;
+        font-weight: 100;
+        font-size: 40px;
+    }
+
+    input {
+        margin: 30px 0;
+        padding: 0 10px;
+        border: none;
+        height: 50px;
+        width: 400px;
+        font-size: 1rem;
+        outline: none;
+        border-radius: 5px;
+        transition: .5s;
+        position: relative;
+        border-bottom: 1px solid #e8e8e8;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+      
+    }
+    button {
+        margin: 15px 0;
+        padding: 0 10px;
+        height: 50px;
+        width: 400px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 40px;
+        font-size: 20px;
+        font: $font;
+    }
+    body {
+        height: 100vh;
+        width: 100%;
+        background-color:#e8e8e8;
+        display: flex;
+        
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+    
+}
+.navbar {
+    background-color: #6c7a89;
+    background-size: 2px;
+    overflow: hidden;
+    a {
+        float: left;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 22px;
+        font: $font;
+      }
+    a:hover {
+        background-color: white;
+        color: black;
+    }
+  }
+
+.dropdown {
+    dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 12px 16px;
+        background-color: inherit;
+        font-family: inherit; 
+        margin: 10; 
+        cursor: pointer;
+    }
+    right: 10%;
+    position: absolute;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    /* inside dropdown */
+    a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+
+      }
+     /* set background color to dropdown on hover */
+    a:hover {
+        background-color: #ddd;
+    }
+  }
+  
+  /* show dropdown menu */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
